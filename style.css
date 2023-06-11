@@ -29,6 +29,8 @@ p {
 /* HEADER */
 .date {
   font-size: 0.8em;
+  text-align: center;
+  margin: 25px 0 0 0;
 }
 header h1 {
   font-family: 'Abril Fatface', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -39,13 +41,14 @@ header h1 {
 
 /* NAVIGATION */
 nav {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   padding: 5px 0;
   margin: 1em 0;
   position: sticky;
   top: 0;
-  background: white;
+  background: rgb(221, 181, 181);
+  z-index: 1;
 }
 nav ul {
   list-style: none;
@@ -54,10 +57,11 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 0 0.5em;
+  
 }
 nav a {
   font-size: 0.8em;
-  color: #777;
+  color: black;
 }
 
 /* FRONT PAGE ARTICLE */
@@ -79,12 +83,15 @@ main img {
   border-top: 1px solid #eee;
   margin-top: 1.5em;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
 }
 .more-articles section {
-  display: inline-block;
+  display: grid;
   width: 44%;
   margin: 0 1em;
-}
+  grid-template-columns: repeat (3, 1fr);
+} 
 .more-articles img {
   width: 100%;
 }
@@ -92,3 +99,27 @@ main img {
   font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
 }
+
+/* ADDITIONAL ARTICLES */
+.additonal-articles {
+  border-top: 1px solid #eee;
+  margin-top: 1.5em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+}
+.additional-articles section {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  width: 44%;
+  margin: 0 1em;
+  
+}
+.additional-articles img {
+  width: 100%;
+}
+.additional-articles h4 {
+  font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+}
+
